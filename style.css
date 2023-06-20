@@ -16,7 +16,8 @@
 
 body {
   font-family: sohne;
-  background-image: url("./cover2.jpg");
+  /* background-image: url("./cover2.png"); */
+  background-image: url("./cover3.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
