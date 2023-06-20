@@ -18,7 +18,7 @@ body {
   font-family: sohne;
   background-image: url("./cover2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .overlay {
@@ -31,6 +31,7 @@ body {
   width: 100%;
   /* background-color: rgba(255, 0, 0, 0.4); */
   position: fixed;
+  top: 0;
 }
 .overlay .bottom {
   height: 20%;
@@ -44,6 +45,20 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+.container .img{
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.container .img img{
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  object-fit: cover;
+}
+.container .img img:hover{
+  transform: scale(1.1);
+}
 .hero .container {
   flex-direction: column;
 }
@@ -53,7 +68,7 @@ header {
   color: #fff;
   padding: 20px 0;
   position: sticky;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 header .container {
@@ -118,7 +133,22 @@ section h2 {
   position: relative;
   overflow: hidden;
   padding-bottom: 56.25%;
+  /* animation: myOrbit 10s linear infinite; */
 }
+
+.video-item:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.video-item:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.video-item:nth-child(4) {
+  animation-delay: 6s;
+}
+
+
 
 .video-item iframe {
   position: absolute;
@@ -152,9 +182,9 @@ footer {
 
 @keyframes myOrbit {
   from {
-    transform: rotate(0deg) translateX(150px) rotate(0deg);
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
   }
 }

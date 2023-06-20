@@ -1,24 +1,18 @@
-var overlay = document.querySelector(".overlay");
+var top = document.querySelector(".top");
 var bottom = document.querySelector(".bottom");
 
-overlay.addEventListener("mousemove", function (e) {
-  //   console.log(e.pageX, e.pageY);
-  if (e.target.className === "top") {
-    window.scrollTo(0, 0);
-  }
-//   if (e.target.className === "bottom") {
-//     scrollDown();
-//   }
+let idx;
+top.addEventListener("mouseenter", function (e) {
+  console.log("mouseenter");
+  // idx = setInterval(() => window.scrollBy(0, -1), 1);
+});
+top.addEventListener("mouseleave", function (e) {
+  clearInterval(idx);
 });
 bottom.addEventListener("mouseenter", function (e) {
-    window.scrollTo(0, window.innerHeight);
-    // const interval = setInterval(scrollDown, .1);
-    // bottom.addEventListener("mouseleave", function (e) {
-    //     clearInterval(interval);
-    // })
+  console.log("mouseenter");
+  idx = setInterval(() => window.scrollBy(0, 1), 1);
 });
-// var scroller = 0;
-// function scrollDown() {
-//   scroller += 1;
-//   window.scrollTo(0, scroller);
-// }
+bottom.addEventListener("mouseleave", function (e) {
+  clearInterval(idx);
+});
