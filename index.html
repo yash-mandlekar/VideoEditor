@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Editor Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="overlay">
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <h1>Video Editor</h1>
+          </div>
+          <ul class="nav-links">
+            <a href="#about"> <li>About</li></a>
+            <a href="#portfolio"> <li>Portfolio</li></a>
+            <a href="#contact"> <li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="container">
+          <h1>Welcome to my Video Editing Portfolio</h1>
+          <p>Showcasing my best work in video editing and post-production</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate video editor with several years of experience in the
+          industry. I specialize in creating engaging and visually appealing
+          videos for various purposes, including commercials, music videos,
+          documentaries, and more. I have expertise in using industry-standard
+          video editing software and tools to bring stories to life.
+        </p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="video-grid">
+          <div class="video-item">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/GiWlH3cMaCw"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-item">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/KICh5TQoMuE"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-item">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/3G3p25dwk58"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Video Editor Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
